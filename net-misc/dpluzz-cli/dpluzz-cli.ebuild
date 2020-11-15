@@ -23,7 +23,7 @@ EAPI=7
 # Take a look at the eclass/ directory for more examples.
 
 # Short one-line description of this package.
-DESCRIPTION=" Telecharge les vidéos depuis différents sites de rattrapage"
+DESCRIPTION="Telecharge les vidéos depuis différents sites de rattrapage"
 
 # Homepage, not used by Portage directly but handy for developer reference
 HOMEPAGE="https://forum.ubuntu-fr.org/viewtopic.php?id=1559861"
