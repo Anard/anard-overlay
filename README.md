@@ -17,6 +17,8 @@ And sync with overlay :
 # emerge --sync anard
 ```
 
+## dPluzz
+
 To install dpluzz-cli, simply use :
 ```
 # emerge -a dpluzz-cli
