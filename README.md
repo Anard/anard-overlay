@@ -21,3 +21,8 @@ To install dpluzz-cli, simply use
 ```
 # emerge -a dpluzz-cli
 ```
+
+For help, type
+```
+dpluzz-cli --help
+```
