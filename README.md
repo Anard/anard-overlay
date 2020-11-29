@@ -29,4 +29,4 @@ For help, type :
 $ dpluzz-cli --help
 ```
 
-You need to use dpluzz-cli with -f option to work (use ffmpeg in place of avconv).
+You'll have to use dpluzz-cli with -f option to work (use ffmpeg in place of avconv).
