@@ -32,4 +32,4 @@ $ dpluzz-cli --help
 You'll have to use dpluzz-cli with -f option to work (use ffmpeg in place of avconv).
 
 # Thanks
-(https://launchpad.net/~melixgaro)[Melixgaro]
+[Melixgaro](https://launchpad.net/~melixgaro)
