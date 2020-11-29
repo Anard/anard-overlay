@@ -24,5 +24,5 @@ To install dpluzz-cli, simply use
 
 For help, type
 ```
-dpluzz-cli --help
+$ dpluzz-cli --help
 ```
