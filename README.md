@@ -11,7 +11,7 @@ sync-uri = https://github.com/Anard/anard-overlay.git
 auto-sync = yes
 ```
 
-And sync with overlay with
+And sync with overlay :
 
 ```
 # emerge --sync anard
