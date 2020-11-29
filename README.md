@@ -17,12 +17,14 @@ And sync with overlay :
 # emerge --sync anard
 ```
 
-To install dpluzz-cli, simply use
+To install dpluzz-cli, simply use :
 ```
 # emerge -a dpluzz-cli
 ```
 
-For help, type
+For help, type :
 ```
 $ dpluzz-cli --help
 ```
+
+You need to use dpluzz-cli with -f option to work (use ffmpeg in place of avconv).
