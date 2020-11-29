@@ -8,7 +8,7 @@ To install the repository, copy these lines in /etc/portage/repos.conf/anard.con
 location = /var/db/repos/anard
 sync-type = git
 sync-uri = https://github.com/Anard/anard-overlay.git
-auto-sync = no
+auto-sync = yes
 ```
 
 And sync with overlay with
