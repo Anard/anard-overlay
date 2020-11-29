@@ -1,3 +1,4 @@
+
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
@@ -109,7 +110,8 @@ DEPEND="${RDEPEND}"
 
 # The following src_configure function is implemented as default by portage, so
 # you only need to call it if you need a different behaviour.
-#src_configure() {
+src_configure() {
+	echo 'conf'
 	# Most open-source packages use GNU autoconf for configuration.
 	# The default, quickest (and preferred) way of running configure is:
 	#econf
@@ -128,11 +130,12 @@ DEPEND="${RDEPEND}"
 	# Note the use of --infodir and --mandir, above. This is to make
 	# this package FHS 2.2-compliant.  For more information, see
 	#   https://wiki.linuxfoundation.org/lsb/fhs
-#}
+}
 
 # The following src_compile function is implemented as default by portage, so
 # you only need to call it, if you need different behaviour.
-#src_compile() {
+src_compile() {
+	echo 'comp'
 	# emake is a script that calls the standard GNU make with parallel
 	# building options for speedier builds (especially on SMP systems).
 	# Try emake first.  It might not work for some packages, because
@@ -142,13 +145,18 @@ DEPEND="${RDEPEND}"
 	# worked around.
 
 	#emake
-#}
+}
 
 # The following src_install function is implemented as default by portage, so
 # you only need to call it, if you need different behaviour.
 src_install() {
-	cp -r "${D}/usr/share/dPluzz" /usr/share/
-	cp "${D}/usr/bin/*" /usr/bin/
+	echo 'installing files'
+	insinto /usr/share/
+	exeinto /usr/bin/
+	doins -r ${S}/usr/share/dPluzz
+	doexe ${S}/usr/bin/dpluzz-cli
+	#cp -R "${WORKDIR}/${PN}/usr/share/dPluzz/"* /usr/share/ || die "install failed"
+	#cp "${WORKDIR}/${PN}/usr/bin/"* /usr/bin/ | die "install failed"
 
 # You must *personally verify* that this trick doesn't install
 	# anything outside of DESTDIR; do this by reading and
