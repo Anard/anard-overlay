@@ -11,8 +11,13 @@ sync-uri = https://github.com/Anard/anard-overlay.git
 auto-sync = no
 ```
 
-To install dpluzz-cli, simply use
+And sync with overlay with
+
 ```
 # emerge --sync anard
+```
+
+To install dpluzz-cli, simply use
+```
 # emerge -a dpluzz-cli
 ```
