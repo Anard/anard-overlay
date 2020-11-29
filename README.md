@@ -1,5 +1,5 @@
 # anard-overlay
-gentoo repository for dpluzz-cli
+Gentoo repository to install dpluzz-cli
 
 ## Installation
 To install the repository, copy these lines in /etc/portage/repos.conf/anard.conf
