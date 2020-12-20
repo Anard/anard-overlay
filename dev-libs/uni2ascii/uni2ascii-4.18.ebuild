@@ -8,3 +8,7 @@ SRC_URI="http://billposer.org/Software/Downloads/${P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
+
+src_test() {
+	make check
+}
