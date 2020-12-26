@@ -11,8 +11,8 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
-RDEPEND=">=dev-libs/uni2ascii-4.18 media-video/ffmpeg sys-apps/coreutils dev-libs/openssl"
-#RDEPEND="${RDEPEND} app-text/recode ?libtext-unidecode-perl ?libhtml-parser-perl"
+RDEPEND=">=dev-libs/uni2ascii-4.18 media-video/ffmpeg sys-apps/coreutils dev-libs/openssl >=dev-perl/Text-Unidecode-1.300.0 >=dev-perl/HTML-Parser-3.720.0"
+#RDEPEND="${RDEPEND} app-text/recode"
 DEPEND="${RDEPEND}"
 
 src_configure() {
