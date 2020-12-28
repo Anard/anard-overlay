@@ -24,5 +24,5 @@ src_compile() {
 src_install() {
 	echo 'Installing files...'
 	exeinto /usr/bin/
-	doexe "${S}/${PN}.py"
+	doexe "${S}/${PN}"
 }
