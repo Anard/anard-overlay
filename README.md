@@ -21,6 +21,7 @@ And sync with overlay :
 # emerge --sync anard
 ```
 
+
 ## dPluzz
 
 To install dpluzz-cli, simply use :
@@ -38,6 +39,7 @@ You'll have to use dpluzz-cli with -f option to work (use ffmpeg in place of avc
 ### Thanks
 [Melixgaro](https://launchpad.net/~melixgaro)
 
+
 ## disklav
 
 Read and manages files from Yamaha Disklavier disk image.
@@ -47,5 +49,3 @@ $ disklav --help
 ```
 ### Thanks
 [MS3FGX](https://github.com/MS3FGX/)
-
-
