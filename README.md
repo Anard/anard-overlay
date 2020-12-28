@@ -1,5 +1,5 @@
 # anard-overlay
-Gentoo repository to install various additionnal packages
+Gentoo repository to port various additionnal packages
 - dpluzz-cli :
     downloads videos from various websites
 - disklav :
