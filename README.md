@@ -1,8 +1,8 @@
 # anard-overlay
 Gentoo repository to port various additionnal packages
-- **dpluzz-cli** :
+- [**dpluzz-cli**](README.md#dpluzz) :
     downloads videos from various websites
-- **disklav** :
+- [**disklav**](README.md#disklav) :
     manages files from specfic Yamaha Disklavier's disk images
 
 ## Installation
