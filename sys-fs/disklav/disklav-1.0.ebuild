@@ -5,7 +5,7 @@ EAPI=7
 DESCRIPTION="# Manage MIDI/E-Seq files inside of Disklavier images"
 HOMEPAGE="https://github.com/MS3FGX/${PN}"
 SRC_URI="https://github.com/MS3FGX/${PN}/archive/master.zip"
-
+S="${WORKDIR}${PN}-master"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
