@@ -48,4 +48,4 @@ Read and manages files from Yamaha Disklavier disk image.
 $ disklav --help
 ```
 ### Thanks
-[MS3FGX](https://github.com/MS3FGX/)
+[Tom Nardi](https://github.com/MS3FGX/)
