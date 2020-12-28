@@ -12,3 +12,17 @@ KEYWORDS="~amd64"
 IUSE=""
 RDEPEND="dev-python/bitstring"
 DEPEND="${RDEPEND}"
+
+src_configure() {
+	echo 'no configuration needed'
+}
+
+src_compile() {
+	echo 'no compilation needed'
+}
+
+src_install() {
+	echo 'Installing files...'
+	exeinto /usr/bin/
+	doexe "${S}/disklav.py"
+}
