@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-DESCRIPTION="Read Yamaha Disklavier floppy disk images"
+DESCRIPTION="# Manage MIDI/E-Seq files inside of Disklavier images"
 HOMEPAGE="https://github.com/MS3FGX/disklav"
-SRC_URI="https://github.com/MS3FGX/disklav/blob/master/disklav.py"
+SRC_URI="https://github.com/MS3FGX/${PN}/blob/master/${PN}.py"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -24,5 +24,5 @@ src_compile() {
 src_install() {
 	echo 'Installing files...'
 	exeinto /usr/bin/
-	doexe "${S}/disklav.py"
+	doexe "${S}/${PN}.py"
 }
