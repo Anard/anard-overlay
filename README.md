@@ -1,8 +1,8 @@
 # anard-overlay
 Gentoo repository to port various additionnal packages
-- dpluzz-cli :
+- **dpluzz-cli** :
     downloads videos from various websites
-- disklav :
+- **disklav** :
     manages files from specfic Yamaha Disklavier's disk images
 
 ## Installation
@@ -21,9 +21,8 @@ And sync with overlay :
 # emerge --sync anard
 ```
 
-
 ## dPluzz
-
+### Instructions
 To install dpluzz-cli, simply use :
 ```
 # emerge -a dpluzz-cli
@@ -41,7 +40,7 @@ You'll have to use dpluzz-cli with -f option to work (use ffmpeg in place of avc
 
 
 ## disklav
-
+### Instructions
 Read and manages files from Yamaha Disklavier disk image.
 ```
 # emerge -a disklav
