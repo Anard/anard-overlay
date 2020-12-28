@@ -1,5 +1,9 @@
 # anard-overlay
-Gentoo repository to install dpluzz-cli which downloads videos from various websites
+Gentoo repository to install various additionnal packages
+- dpluzz-cli :
+    downloads videos from various websites
+- disklav :
+    manages files from specfic Yamaha Disklavier's disk images
 
 ## Installation
 To install the repository, copy these lines in /etc/portage/repos.conf/anard.conf
@@ -31,5 +35,17 @@ $ dpluzz-cli --help
 
 You'll have to use dpluzz-cli with -f option to work (use ffmpeg in place of avconv).
 
-# Thanks
+### Thanks
 [Melixgaro](https://launchpad.net/~melixgaro)
+
+## disklav
+
+Read and manages files from Yamaha Disklavier disk image.
+```
+# emerge -a disklav
+$ disklav --help
+```
+### Thanks
+[MS3FGX](https://github.com/MS3FGX/)
+
+
