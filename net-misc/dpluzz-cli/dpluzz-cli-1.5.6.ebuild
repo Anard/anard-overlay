@@ -15,16 +15,8 @@ RDEPEND=">=dev-libs/uni2ascii-4.18 media-video/ffmpeg sys-apps/coreutils dev-lib
 #RDEPEND="${RDEPEND} app-text/recode"
 DEPEND="${RDEPEND}"
 
-src_configure() {
-	echo 'no configuration needed'
-}
-
-src_compile() {
-	echo 'no compilation needed'
-}
-
 src_install() {
-	echo 'Installing files...'
+	einfo 'Installing files...'
 	insinto /usr/share/
 	exeinto /usr/bin/
 	doins -r "${S}/usr/share/dPluzz"
