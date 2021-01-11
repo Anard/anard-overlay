@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -11,7 +11,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
-RDEPEND=">=dev-libs/uni2ascii-4.18 media-video/ffmpeg sys-apps/coreutils dev-libs/openssl >=dev-perl/Text-Unidecode-1.300.0 >=dev-perl/HTML-Parser-3.720.0"
+RDEPEND="dev-libs/uni2ascii media-video/ffmpeg sys-apps/coreutils dev-libs/openssl dev-perl/Text-Unidecode dev-perl/HTML-Parser"
 #RDEPEND="${RDEPEND} app-text/recode"
 DEPEND="${RDEPEND}"
 
