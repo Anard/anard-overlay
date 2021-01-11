@@ -5,4 +5,6 @@
 		<email>unknown@xxx.net</email>
 		<name>Melixgaro</name>
 	</maintainer>
+	<longdescription lang="en">Download videos from various website. First devoted to french TV. Command-line version.</longdescription>
+	<longdescription lang="fr">Télécharge des vidéos depuis différents sites de rattrapage. Principalement dédiés à la télévision française.</longdescription>
 </pkgmetadata>
