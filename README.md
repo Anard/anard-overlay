@@ -15,6 +15,11 @@ sync-uri = https://github.com/Anard/anard-overlay.git
 auto-sync = yes
 ```
 
+Or just use eselect repository
+```
+# eselect repository enable anard
+```
+
 And sync with overlay :
 
 ```
