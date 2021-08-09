@@ -35,11 +35,6 @@ IUSE="+grub"
 # The below is valid if the same run-time depends are required to compile.
 #DEPEND="${RDEPEND}"
 
-src_unpack() {
-	einfo "URI = ${SRC_URI}"
-	einfo "DIST = ${DIST_DIR}"
-}
-
 src_install() {
 	einfo 'Installing files...'
 	exeinto /usr/sbin/
