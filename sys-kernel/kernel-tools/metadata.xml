@@ -6,7 +6,7 @@
     <name>Anard</name>
   </maintainer>
   <longdescription>
-    Uses build-kernel command to build a new kernel from known or working config file. Also add a shortcut to grub-mkconfig -o /boot/grub/grub.cfg as grub-update for Grub users (with grub USE flag enabled).
+    Use build-kernel command to easily build a new kernel from known or working config file. Also add a shortcut to grub-mkconfig -o /boot/grub/grub.cfg as grub-update for Grub users (with grub USE flag enabled).
   </longdescription>  <use>
     <flag name="grub">Use Grub as bootloader</flag>
   </use>
