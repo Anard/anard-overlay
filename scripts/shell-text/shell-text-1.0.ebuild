@@ -4,9 +4,9 @@
 EAPI=7
 DESCRIPTION="Formatting text in echo commands"
 HOMEPAGE="https://github.com/Anard/HelpSh/"
-SRC_URI="https://github.com/Anard/HelpSh/archive/refs/heads/master.zip"
+SRC_URI="https://github.com/Anard/HelpSh/archive/refs/heads/master.zip -> ${P}.zip"
 
-#S="${WORKDIR}/${P}"
+S="${WORKDIR}/HelpSh-master"
 LICENSE="GPL-3"
 SLOT="0"
 
