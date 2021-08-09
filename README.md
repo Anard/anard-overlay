@@ -53,3 +53,14 @@ $ disklav --help
 ```
 ### Thanks
 [Tom Nardi](https://github.com/MS3FGX/)
+
+## kernel-tools
+### Instructions
+Easily build a new kernel from known or working configuration.
+```
+# emerge -a kernel-tools
+# eselect-kernel set X
+$ build-kernel --help
+```
+### Thanks
+[Tony0945](https://forums.gentoo.org/viewtopic-t-1135833.html)
