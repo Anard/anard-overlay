@@ -7,17 +7,17 @@ EAPI=7
 DESCRIPTION="Easily build and update kernel in Gentoo"
 
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/master.zip -> ${P}.zip"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
 # If you don't need to change it, leave the S= line out of the ebuild
 # to keep it tidy.
-#S="${WORKDIR}/${P}"
+S="${WORKDIR}/${PN}-master"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="+grub"
 
 # Run-time dependencies. Must be defined to whatever this depends on to run.
