@@ -39,7 +39,11 @@ src_install() {
 	einfo 'Installing files...'
 	exeinto /usr/sbin/
 	if use grub; then
-		doexe "${S}/grub-update"
+		# set grub variable in build-kernel
+		sed -i '5s/.*/grub=1/' "${S}/build-kernel"
+		doexe "${S}/update-grub"
+	else
+		sed -i '5s/.*/grub=0/' "${S}/build-kernel"
 	fi
 	doexe "${S}/build-kernel"
 }
