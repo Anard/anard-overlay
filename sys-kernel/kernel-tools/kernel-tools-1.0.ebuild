@@ -18,7 +18,7 @@ SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/master.zip"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="+grub"
 
 # Run-time dependencies. Must be defined to whatever this depends on to run.
 # Example:
@@ -37,11 +37,14 @@ IUSE=""
 
 src_unpack() {
 	einfo "URI = ${SRC_URI}"
+	einfo "DIST = ${DIST_DIR}"
 }
 
 src_install() {
 	einfo 'Installing files...'
 	exeinto /usr/sbin/
-	doexe "${S}/grub-update"
+	if use grub; then
+		doexe "${S}/grub-update"
+	fi
 	doexe "${S}/build-kernel"
 }

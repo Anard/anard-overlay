@@ -5,4 +5,7 @@
     <email>anard@free.fr</email>
     <name>Anard</name>
   </maintainer>
+  <use>
+    <flag name="grub">Use Grub as bootloader</flag>
+  </use>
 </pkgmetadata>
