@@ -7,7 +7,7 @@ EAPI=7
 DESCRIPTION="Easily build and update kernel in Gentoo"
 
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/master.zip -> ${P}.zip"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/master.zip -> ${PF}.zip"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
