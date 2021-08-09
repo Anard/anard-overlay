@@ -4,6 +4,11 @@ Gentoo repository to port various additionnal packages
     downloads videos from various websites
 - [**disklav**](README.md#disklav) :
     manages files from specfic Yamaha Disklavier's disk images
+- **shell-text** :
+    utility to decorate shell texts
+- [**kernel-tools**](README.md#kernel-tools) :
+    shortcut to `grub-mkconfig -o /boot/grub/grub.cfg` as `grub-update` for Grub users
+    build-kernel utility perform full update of kernel based on existing or working configuration file
 
 ## Installation
 To install the repository, copy these lines in /etc/portage/repos.conf/anard.conf
