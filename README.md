@@ -7,8 +7,8 @@ Gentoo repository to port various additionnal packages
 - **shell-text** :
     utility to decorate shell texts
 - [**kernel-tools**](README.md#kernel-tools) :
-    shortcut to `grub-mkconfig -o /boot/grub/grub.cfg` as `grub-update` for Grub users
-    build-kernel utility perform full update of kernel based on existing or working configuration file
+    shortcut to `grub-mkconfig -o /boot/grub/grub.cfg` as `grub-update` for Grub users ;
+    `build-kernel` utility performs full update of kernel based on existing or working configuration file
 
 ## Installation
 To install the repository, copy these lines in /etc/portage/repos.conf/anard.conf
