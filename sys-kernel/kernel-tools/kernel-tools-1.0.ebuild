@@ -17,7 +17,7 @@ SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.t
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE="+grub"
 
 # Run-time dependencies. Must be defined to whatever this depends on to run.
