@@ -35,15 +35,20 @@ RDEPEND="color? ( >=scripts/shell-text-1.0-r2 ) grub? ( >=sys-boot/grub-2 )"
 # The below is valid if the same run-time depends are required to compile.
 DEPEND="${RDEPEND}"
 
+src_configure() {
+	# set grub variable in build-kernel
+	if use grub; then
+		sed -i '5s/.*/grub=1/' "${S}/build-kernel"
+	else
+		sed -i '5s/.*/grub=0/' "${S}/build-kernel"
+	fi
+}
+
 src_install() {
 	einfo 'Installing files...'
 	exeinto /usr/sbin/
 	if use grub; then
-		# set grub variable in build-kernel
-		sed -i '5s/.*/grub=1/' "${S}/build-kernel"
 		doexe "${S}/update-grub"
-	else
-		sed -i '5s/.*/grub=0/' "${S}/build-kernel"
 	fi
 	doexe "${S}/build-kernel"
 }
