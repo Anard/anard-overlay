@@ -46,9 +46,9 @@ src_configure() {
 
 src_install() {
 	einfo 'Installing files...'
-	exeinto /usr/sbin/
 	if use grub; then
-		doexe "${S}/update-grub"
+		dosbin "${S}/update-grub"
 	fi
-	doexe "${S}/build-kernel"
+	dosbin "${S}/build-kernel"
+	doman "${S}/build-kernel.1"
 }
