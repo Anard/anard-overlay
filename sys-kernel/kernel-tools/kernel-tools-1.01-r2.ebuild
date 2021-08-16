@@ -51,4 +51,5 @@ src_install() {
 	fi
 	dosbin "${S}/build-kernel"
 	doman "${S}/man/build-kernel.1"
+	doman "${S}/man/build-kernel.fr.1"
 }
