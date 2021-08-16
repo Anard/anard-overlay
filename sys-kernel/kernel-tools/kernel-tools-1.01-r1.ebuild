@@ -38,9 +38,9 @@ DEPEND="${RDEPEND}"
 src_configure() {
 	# set grub variable in build-kernel
 	if use grub; then
-		sed -i '5s/.*/grub=1/' "${S}/build-kernel"
+		sed -i '6s/.*/grub=1/' "${S}/build-kernel"
 	else
-		sed -i '5s/.*/grub=0/' "${S}/build-kernel"
+		sed -i '6s/.*/grub=0/' "${S}/build-kernel"
 	fi
 }
 
