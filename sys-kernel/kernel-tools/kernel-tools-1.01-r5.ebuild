@@ -17,7 +17,7 @@ S="${WORKDIR}/${PN}-master"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE="+color +grub genkernel ( !dracut ) dracut ( !genkernel )"
 
 # Run-time dependencies. Must be defined to whatever this depends on to run.
