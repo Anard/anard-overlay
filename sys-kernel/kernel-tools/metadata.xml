@@ -11,5 +11,7 @@
   <use>
     <flag name="color">Colorize texts</flag>
     <flag name="grub">Use Grub as bootloader</flag>
+    <flag name="genkernel">Use Genkernel to create an Initramfs image</flag>
+    <flag name="dracut">Use Dracut to create an Initramfs image</flag>
   </use>
 </pkgmetadata>
