@@ -50,5 +50,5 @@ src_install() {
 		dosbin "${S}/update-grub"
 	fi
 	dosbin "${S}/build-kernel"
-	doman "${S}/man/*"
+	doman "${S}/man/build-kernel.1"
 }
