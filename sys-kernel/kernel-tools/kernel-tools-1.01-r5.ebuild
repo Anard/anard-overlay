@@ -13,11 +13,12 @@ SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/r5.zip -> ${PF}.zip"
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
 # If you don't need to change it, leave the S= line out of the ebuild
 # to keep it tidy.
-S="${WORKDIR}/${PF}"
+# If anything have ever been downloaded with same $S, it won't be updated, so always have here a different name, ${PF} contains full package name - version - rXX
+S="${WORKDIR}/${PF}-test1"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="+color +grub genkernel dracut"
 REQUIRED_USE="dracut? ( !genkernel )"
 
