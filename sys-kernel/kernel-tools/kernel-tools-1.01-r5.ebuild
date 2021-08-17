@@ -17,7 +17,7 @@ S="${WORKDIR}/${PF}"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="-*"
+KEYWORDS=""
 IUSE="+color +grub genkernel dracut"
 REQUIRED_USE="dracut? ( !genkernel )"
 
