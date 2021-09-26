@@ -10,5 +10,6 @@
   </longdescription>
   <use>
     <flag name="color">Colorize texts</flag>
+    <flag name="gtk">Use zenity to make a GUI version of the script</flag>
 </use>
 </pkgmetadata>
