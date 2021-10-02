@@ -4,8 +4,8 @@
 EAPI=7
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/1.01-r1.zip -> ${PF}.zip"
-S="${WORKDIR}/${PN}-1.01-r1"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/1.01-r2.zip -> ${PF}.zip"
+S="${WORKDIR}/${PN}-1.01-r2"
 
 LICENSE="GPL-3"
 SLOT="0"
