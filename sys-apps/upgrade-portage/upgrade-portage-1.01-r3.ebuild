@@ -2,10 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
+
+inherit desktop
+
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/1.01-r2.zip -> ${PF}.zip"
-S="${WORKDIR}/${PN}-1.01-r2"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/1.01-r4.zip -> ${PF}.zip"
+S="${WORKDIR}/${PN}-1.01-r4"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -18,6 +21,6 @@ DEPEND="${RDEPEND}"
 src_install() {
 	einfo 'Installing files...'
 	dosbin "${S}/upgrade"
-	insinto "/usr/share/applications"
-	doins "upgrade.desktop"
+	doicon -s 64 "${S}/upgrade-portage.png"
+	domenu "${S}/upgrade.desktop"
 }
