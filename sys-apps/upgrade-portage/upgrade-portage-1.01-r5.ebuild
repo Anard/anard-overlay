@@ -4,6 +4,7 @@
 EAPI=7
 
 inherit desktop
+inherit xdg-utils
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
@@ -23,4 +24,12 @@ src_install() {
 	dosbin "${S}/upgrade"
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
+}
+
+pkg_postinst() {
+#	xdg_desktop_database_update
+	xdg_icon_cache_update
+}
+pkg_postrm() {
+	xdg_icon_cache_update
 }
