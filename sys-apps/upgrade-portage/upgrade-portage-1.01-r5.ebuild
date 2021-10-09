@@ -7,8 +7,8 @@ inherit desktop
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/1.01-r4.zip -> ${PF}.zip"
-S="${WORKDIR}/${PN}-1.01-r4"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/1.01-r5.zip -> ${PF}.zip"
+S="${WORKDIR}/${PN}-1.01-r5"
 
 LICENSE="GPL-3"
 SLOT="0"
