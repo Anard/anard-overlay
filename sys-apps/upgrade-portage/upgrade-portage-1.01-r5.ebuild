@@ -22,14 +22,21 @@ DEPEND="${RDEPEND}"
 src_install() {
 	einfo 'Installing files...'
 	dosbin "${S}/upgrade"
-	doicon -s 64 "${S}/upgrade-portage.png"
-	domenu "${S}/upgrade.desktop"
+	if use gtk; then
+		doicon -s 64 "${S}/upgrade-portage.png"
+		domenu "${S}/upgrade.desktop"
+		ewarn "Be sure to have properly configured an askpass program in /etc/sudo.conf"
+	fi
 }
 
 pkg_postinst() {
-#	xdg_desktop_database_update
-	xdg_icon_cache_update
+	if use gtk; then
+#		xdg_desktop_database_update
+		xdg_icon_cache_update
+	fi
 }
 pkg_postrm() {
-	xdg_icon_cache_update
+	if use gtk; then
+		xdg_icon_cache_update
+	fi
 }
