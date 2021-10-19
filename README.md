@@ -69,9 +69,6 @@ $ upgrade --help
 ```
 Also add a desktop file which uses zenity to interactively manage upgrade (with gtk USE flag) ;
 
-### Thanks
-[Tony0945](https://forums.gentoo.org/viewtopic-t-1135833.html)
-
 ## kernel-tools
 ### Instructions
 Easily build a new kernel from known or working configuration.
