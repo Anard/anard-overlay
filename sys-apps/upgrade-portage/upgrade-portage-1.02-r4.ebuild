@@ -25,7 +25,7 @@ src_install() {
 	if use gtk; then
 		doicon -s 64 "${S}/upgrade-portage.png"
 		domenu "${S}/upgrade.desktop"
-		grep -e '^Path askpath .*' "/etc/sudo.conf" > /dev/null
+		grep -e '^Path askpass .*' "/etc/sudo.conf" > /dev/null
 		if [ $? -gt 0 ]; then
 			ewarn "Be sure to have properly configured an askpass program in /etc/sudo.conf"
 		fi
