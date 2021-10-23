@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+color +gtk"
 
-RDEPEND="color? ( >=scripts/shell-text-1.0-r2 ) gtk? ( gnome-extra/zenity || ( lxqt-base/lxqt-openssh-askpass net-misc/ssh-askpass-fullscreen net-misc/x11-ssh-askpass ) )"
+RDEPEND=">=sys-apps/portage-3.0 color? ( >=scripts/shell-text-1.0-r2 ) gtk? ( gnome-extra/zenity || ( lxqt-base/lxqt-openssh-askpass net-misc/ssh-askpass-fullscreen net-misc/x11-ssh-askpass ) )"
 DEPEND="${RDEPEND}"
 
 src_install() {
