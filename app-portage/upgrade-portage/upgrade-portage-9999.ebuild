@@ -8,6 +8,7 @@ inherit xdg-utils
 inherit git-r3
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
+HOMEPAGE="https://github.com/Anard/${PN}.git"
 EGIT_REPO_URI="https://github.com/Anard/${PN}.git"
 EGIT_BRANCH="develop"
 S="${WORKDIR}/${PF}"
