@@ -6,8 +6,8 @@
     <name>Anard</name>
   </maintainer>
   <longdescription>
-    upgrade script will sync all your overlays, upgrade your Gentoo system and depclean with a single command
-    from desktop file (or with -x option), will also read news items before upgrade
+    Upgrade script will sync all your overlays, upgrade your Gentoo system and depclean with a single command.
+    From desktop file (or with -x option), will also read news items before upgrade
   </longdescription>
   <use>
     <flag name="color">Colorize texts for command line</flag>
