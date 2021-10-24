@@ -31,7 +31,6 @@ src_install() {
 	if use gtk; then
 		doicon -s 64 "${S}/upgrade-portage.png"
 		domenu "${S}/upgrade.desktop"
-
 	fi
 }
 
