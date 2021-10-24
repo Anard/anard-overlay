@@ -29,6 +29,7 @@ src_unpack() {
 src_install() {
 	einfo 'Installing files...'
 	dosbin "${S}/upgrade"
+	dodoc "${S}/README.md"
 	if use gtk; then
 		doicon -s 64 "${S}/upgrade-portage.png"
 		domenu "${S}/upgrade.desktop"
