@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>anard@free.fr</email>
+    <name>Anard</name>
+  </maintainer>
+  <longdescription>
+    upgrade script will sync all your overlays and upgrade your Gentoo system with a single command
+  </longdescription>
+  <use>
+    <flag name="color">Colorize texts</flag>
+    <flag name="gtk">Use zenity to make a GUI version of the script</flag>
+</use>
+</pkgmetadata>
