@@ -8,7 +8,8 @@ inherit xdg-utils
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/${PVR}.zip -> ${P}.zip"
+S="${WORKDIR}/${PF}"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -24,6 +25,12 @@ src_install() {
 	if use gtk; then
 		doicon -s 64 "${S}/upgrade-portage.png"
 		domenu "${S}/upgrade.desktop"
+		dodoc "${S}/README.md"
+	fi
+}
+
+pkg_postinst() {
+	if use gtk; then
 		grep -e '^Path askpass .*' "/etc/sudo.conf" > /dev/null
 		if [ $? -gt 0 ]; then
 			ewarn "Be sure to have properly configured an askpass program in /etc/sudo.conf"
@@ -31,11 +38,6 @@ src_install() {
 		if ! type qlop &> /dev/null; then
 			elog "qlop is used to estimate merge times, you can install it via emerge -a app-portage/portage-utils"
 		fi
-	fi
-}
-
-pkg_postinst() {
-	if use gtk; then
 #		xdg_desktop_database_update
 		xdg_icon_cache_update
 	fi

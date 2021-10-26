@@ -10,7 +10,7 @@ inherit git-r3
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
 EGIT_REPO_URI="https://github.com/Anard/${PN}.git"
-EGIT_BRANCH="1.03-r2"
+EGIT_BRANCH="develop"
 S="${WORKDIR}/${PF}"
 
 LICENSE="GPL-3"
