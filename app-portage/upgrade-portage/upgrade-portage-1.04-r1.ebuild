@@ -8,7 +8,7 @@ inherit xdg-utils
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/${PVR}.zip -> ${P}.zip"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/${PVR}.zip -> ${PF}.zip"
 S="${WORKDIR}/${PF}"
 
 LICENSE="GPL-3"
