@@ -67,7 +67,7 @@ Easily upgrade Gentoo system via portage
 # emerge -a upgrade-portage
 $ upgrade --help
 ```
-Also add a desktop file which uses zenity to interactively manage upgrade (with gtk USE flag) ;
+Also add a desktop file which uses zenity to interactively manage upgrade
 
 ## kernel-tools
 ### Instructions

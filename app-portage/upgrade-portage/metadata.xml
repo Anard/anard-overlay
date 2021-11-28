@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <maintainer type="person">
@@ -11,6 +11,5 @@
   </longdescription>
   <use>
     <flag name="color">Colorize texts for command line</flag>
-    <flag name="gtk">Use zenity to make a GUI version of the script and install a desktop file</flag>
 </use>
 </pkgmetadata>
