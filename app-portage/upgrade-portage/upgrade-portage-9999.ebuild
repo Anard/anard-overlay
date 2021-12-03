@@ -10,7 +10,7 @@ inherit git-r3
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
 EGIT_REPO_URI="https://github.com/Anard/${PN}.git"
-EGIT_BRANCH="master"
+EGIT_BRANCH="develop"
 S="${WORKDIR}/${PF}"
 
 LICENSE="GPL-3"
@@ -33,8 +33,8 @@ src_install() {
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
 	if use l10n_fr; then
-		dodir /usr/share/locale/fr/MC_MESSAGES
-		msgfmt -o /usr/share/locale/fr/LC_MESSAGES/upgrade-portage.mo ${S}/locale/fr.po
+		msgfmt -o ${S}/locale/upgrade-portage.mo ${S}/locale/fr.po
+		domo ${S}/locale/upgrade-portage.mo
 	fi
 }
 
