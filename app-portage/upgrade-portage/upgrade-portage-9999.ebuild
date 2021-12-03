@@ -16,7 +16,7 @@ S="${WORKDIR}/${PF}"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
-IUSE="+color l10n-fr"
+IUSE="+color l10n_fr"
 
 RDEPEND=">=sys-apps/portage-3.0 gnome-extra/zenity || ( lxqt-base/lxqt-openssh-askpass net-misc/ssh-askpass-fullscreen net-misc/x11-ssh-askpass ) color? ( >=scripts/shell-text-1.0-r2 )"
 DEPEND="${RDEPEND}"
