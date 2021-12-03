@@ -6,6 +6,8 @@ Gentoo repository to port various additionnal packages
     manages files from specfic Yamaha Disklavier's disk images
 - **shell-text** :
     utility to decorate shell texts
+- [**upgrade-portage**](README.md#upgrade-portage) :
+    interactive tool to easily upgrade Gentoo system
 - [**kernel-tools**](README.md#kernel-tools) :
     `build-kernel` utility performs full update of kernel based on existing or working configuration file
     
@@ -57,6 +59,15 @@ $ disklav --help
 ```
 ### Thanks
 [Tom Nardi](https://github.com/MS3FGX/)
+
+## upgrade-portage
+### Instructions
+Easily upgrade Gentoo system via portage
+```
+# emerge -a upgrade-portage
+$ upgrade --help
+```
+Also add a desktop file which uses zenity to interactively manage upgrade
 
 ## kernel-tools
 ### Instructions

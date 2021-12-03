@@ -7,20 +7,19 @@ EAPI=7
 DESCRIPTION="Easily build and update kernel in Gentoo"
 
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/r5.zip -> ${PF}.zip"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/master.zip -> ${PF}.zip"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
 # If you don't need to change it, leave the S= line out of the ebuild
 # to keep it tidy.
-# If anything have ever been downloaded with same $S, it won't be updated, so always have here a different name, ${PF} contains full package name - version - rXX
-S="${WORKDIR}/${PF}"
+S="${WORKDIR}/${PN}-master"
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+color +grub genkernel dracut"
-REQUIRED_USE="dracut? ( !genkernel )"
+IUSE="+color +grub genkernel dracut +menuconfig gconfig xconfig nconfig"
+REQUIRED_USE="dracut? ( !genkernel ) ^^ ( menuconfig gconfig xconfig nconfig )"
 
 # Run-time dependencies. Must be defined to whatever this depends on to run.
 # Example:
@@ -30,8 +29,7 @@ REQUIRED_USE="dracut? ( !genkernel )"
 # had installed on your system when you tested the package.  Then
 # other users hopefully won't be caught without the right version of
 # a dependency.
-# -- util-linux for using getopt function
-RDEPEND="sys-apps/util-linux color? ( >=scripts/shell-text-1.0-r2 ) grub? ( >=sys-boot/grub-2 ) genkernel? ( sys-kernel/genkernel ) dracut? ( sys-kernel/dracut )"
+RDEPEND="color? ( >=scripts/shell-text-1.0-r2 ) grub? ( >=sys-boot/grub-2 ) genkernel? ( sys-kernel/genkernel ) dracut? ( sys-kernel/dracut ) nconfig? ( sys-libs/ncurses ) xconfig? ( dev-qt/qtwidgets ) gconfig? ( x11-libs/gtk+:* dev-libs/glib gnome-base/libglade )"
 
 # Build-time dependencies that need to be binary compatible with the system
 # being built (CHOST). These include libraries that we link against.
@@ -72,6 +70,17 @@ src_configure() {
 		print_conf INITRAMFS 'dracut' build-kernel.cnf
 	else
 		print_conf INITRAMFS 'no' build-kernel.cnf
+	fi
+
+	# set CONFIG_TOOL variable in build-kernel.cnf
+	if use xconfig; then
+		print_conf CONFIG_TOOL 'xconfig' build-kernel.cnf
+	elif use gconfig; then
+		print_conf CONFIG_TOOL 'gconfig' build-kernel.cnf
+	elif use nconfig; then
+		print_conf CONFIG_TOOL 'nconfig' build-kernel.cnf
+	else
+		print_conf CONFIG_TOOL 'menuconfig' build-kernel.cnf
 	fi
 }
 

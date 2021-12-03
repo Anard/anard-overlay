@@ -1,0 +1,15 @@
+?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>anard@free.fr</email>
+    <name>Anard</name>
+  </maintainer>
+  <longdescription>
+    Upgrade script will sync all your overlays, upgrade your Gentoo system and depclean with a single command.
+    From desktop file (or with -x option), will also read news items before upgrade
+  </longdescription>
+  <use>
+    <flag name="color">Colorize texts for command line</flag>
+</use>
+</pkgmetadata>
