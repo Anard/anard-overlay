@@ -16,7 +16,7 @@ S="${WORKDIR}/${PF}"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
-IUSE="+color"
+IUSE="+color l10n-fr"
 
 RDEPEND=">=sys-apps/portage-3.0 gnome-extra/zenity || ( lxqt-base/lxqt-openssh-askpass net-misc/ssh-askpass-fullscreen net-misc/x11-ssh-askpass ) color? ( >=scripts/shell-text-1.0-r2 )"
 DEPEND="${RDEPEND}"
@@ -32,6 +32,10 @@ src_install() {
 	dodoc "${S}/README.md"
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
+	if use l10n_fr; then
+		dodir /usr/share/locale/fr/MC_MESSAGES
+		msgfmt -o /usr/share/locale/fr/LC_MESSAGES/upgrade-portage.mo ${S}/locale/fr.po
+	fi
 }
 
 pkg_postinst() {
@@ -45,6 +49,8 @@ pkg_postinst() {
 		elog "qlop is used to estimate merge times, you can install it via emerge -a app-portage/portage-utils"
 	fi
 }
+
 pkg_postrm() {
-	xdg_icon_cache_updat
+	rm /usr/share/locale/*/LC_MESSAGES/upgrade-portage.mo
+	xdg_icon_cache_update
 }
