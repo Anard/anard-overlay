@@ -51,6 +51,5 @@ pkg_postinst() {
 }
 
 pkg_postrm() {
-	rm /usr/share/locale/*/LC_MESSAGES/upgrade-portage.mo
 	xdg_icon_cache_update
 }
