@@ -32,18 +32,20 @@ src_install() {
 	dodoc "${S}/README.md"
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
-	
+	# install language files
 	langs=( fr )
-	for lang in ${langs[@]}; do
+	supportedLanguages=( french )
+	for i in ${!langs[@]}; do
+		lang="${langs[$i]}"
 		if use "l10n_${lang}"; then
-			msgfmt -o "${S}/locale/${lang}.mo" "${S}/locale/${lang}.po"
-			domo "${S}/locale/${lang}.mo"
+			moFile="${S}/locale/${lang}.mo"
+			poFile="${S}/locale/${lang}.po"
+			msgfmt -o "${moFile}" "${poFile}" && domo "${moFile}" || eerror "An error occurred while installing ${supportedLanguages[$i]} translated interface"
 		fi
 	done
 }
 
 pkg_postinst() {
-#	xdg_desktop_database_update
 	xdg_icon_cache_update
 	grep -e '^Path askpass .*' "/etc/sudo.conf" > /dev/null
 	if [ $? -gt 0 ]; then
