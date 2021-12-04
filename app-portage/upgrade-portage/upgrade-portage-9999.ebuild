@@ -26,23 +26,28 @@ src_unpack() {
 	git-r3_checkout
 }
 
+install_languages() {
+	# supported languages
+	langs=( fr )
+	langs_hum=( french )
+	# install
+	for i in ${!langs[@]}; do
+		lang="${langs[$i]}"
+		if use "l10n_${lang}"; then
+			moFile="${S}/locale/${lang}.mo"
+			poFile="${S}/locale/${lang}.po"
+			msgfmt -o "${moFile}" "${poFile}" && domo "${moFile}" || eerror "An error occurred while installing ${langs_hum[$i]} translated interface"
+		fi
+	done
+}
+
 src_install() {
 	einfo 'Installing files...'
 	dosbin "${S}/upgrade"
 	dodoc "${S}/README.md"
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
-	# install language files
-	langs=( fr )
-	supportedLanguages=( french )
-	for i in ${!langs[@]}; do
-		lang="${langs[$i]}"
-		if use "l10n_${lang}"; then
-			moFile="${S}/locale/${lang}.mo"
-			poFile="${S}/locale/${lang}.po"
-			msgfmt -o "${moFile}" "${poFile}" && domo "${moFile}" || eerror "An error occurred while installing ${supportedLanguages[$i]} translated interface"
-		fi
-	done
+	install_languages
 }
 
 pkg_postinst() {
