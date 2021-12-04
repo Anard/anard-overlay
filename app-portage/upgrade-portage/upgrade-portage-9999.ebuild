@@ -36,8 +36,8 @@ src_install() {
 	langs=( fr )
 	for lang in ${langs[@]}; do
 		if use "l10n_${lang}"; then
-			msgfmt -o "${S}/locale/${PN}.mo" "${S}/locale/${lang}.po"
-			domo "${S}/locale/${PN}.mo"
+			msgfmt -o "${S}/locale/${lang}.mo" "${S}/locale/${lang}.po"
+			domo "${S}/locale/${lang}.mo"
 		fi
 	done
 }
