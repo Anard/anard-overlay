@@ -32,10 +32,14 @@ src_install() {
 	dodoc "${S}/README.md"
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
-	if use l10n_fr; then
-		msgfmt -o ${S}/locale/upgrade-portage.mo ${S}/locale/fr.po
-		domo ${S}/locale/upgrade-portage.mo
-	fi
+	
+	langs=( fr )
+	for lang in ${langs[@]}; do
+		if use "l10n_${lang}"; then
+			msgfmt -o "${S}/locale/${PN}.mo" "${S}/locale/${lang}.po"
+			domo "${S}/locale/${PN}.mo"
+		fi
+	done
 }
 
 pkg_postinst() {
