@@ -44,6 +44,7 @@ install_languages() {
 src_install() {
 	einfo 'Installing files...'
 	dosbin "${S}/upgrade"
+	dobin "${S}/upgrade-log.sh"
 	dodoc "${S}/README.md"
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
