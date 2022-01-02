@@ -8,7 +8,7 @@ inherit xdg-utils
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/heads/${PVR}.zip -> ${PF}.zip"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PVR}.zip -> ${PF}.zip"
 S="${WORKDIR}/${PF}"
 
 LICENSE="GPL-3"
@@ -37,6 +37,7 @@ install_languages() {
 src_install() {
 	einfo 'Installing files...'
 	dosbin "${S}/upgrade"
+	dobin "${S}/upgrade-log.sh"
 	dodoc "${S}/README.md"
 	doicon -s 64 "${S}/upgrade-portage.png"
 	domenu "${S}/upgrade.desktop"
