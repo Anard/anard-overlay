@@ -6,7 +6,6 @@ DESCRIPTION="Easily build and update kernel in Gentoo"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
 
 SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
-#S="${WORKDIR}/${P}"
 
 LICENSE="GPL-3"
 SLOT="0"
