@@ -1,5 +1,6 @@
 app-portage
 dev-libs
+games-action
 net-misc
 scripts
 sys-fs
