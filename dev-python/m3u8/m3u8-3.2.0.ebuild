@@ -10,7 +10,7 @@ inherit distutils-r1
 LICENSE="MIT"
 DESCRIPTION="Python m3u8 Parser for HTTP Live Streaming (HLS) Transmissions"
 HOMEPAGE="https://github.com/globocom/m3u8 https://pypi.org/project/m3u8"
-
+SLOT="0"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 DEPEND="dev-python/iso8601[${PYTHON_USEDEP}]"
