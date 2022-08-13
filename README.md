@@ -2,6 +2,8 @@
 Gentoo repository to port various additionnal packages
 - [**dpluzz-cli**](README.md#dpluzz) :
     downloads videos from various websites
+- [**trobairitz**](README.md#trobairitz) :
+    downloads videos from various websites, new version of Dpluzz-cli 
 - [**disklav**](README.md#disklav) :
     manages files from specfic Yamaha Disklavier's disk images
 - **shell-text** :
@@ -49,6 +51,22 @@ You'll have to use dpluzz-cli with -f option to work (use ffmpeg in place of avc
 ### Thanks
 [Melixgaro](https://launchpad.net/~melixgaro)
 
+## trobairitz
+### Instructions
+To install trobairitz, simply use :
+```
+# emerge -a trobairitz
+```
+
+For help, type :
+```
+$ trobairitz --help
+```
+
+Trobairitz replace dpluzz-cli for videos from Arte.tv and will shortly replace it also for other TV channels.
+
+### Thanks
+[Melixgaro](https://launchpad.net/~melixgaro)
 
 ## disklav
 ### Instructions
