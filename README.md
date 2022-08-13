@@ -3,7 +3,7 @@ Gentoo repository to port various additionnal packages
 - [**dpluzz-cli**](README.md#dpluzz) :
     downloads videos from various websites
 - [**trobairitz**](README.md#trobairitz) :
-    downloads videos from various websites, new version of Dpluzz-cli 
+    downloads videos from various websites, replaces older dpluzz-cli 
 - [**disklav**](README.md#disklav) :
     manages files from specfic Yamaha Disklavier's disk images
 - **shell-text** :
