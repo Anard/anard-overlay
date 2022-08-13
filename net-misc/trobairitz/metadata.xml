@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>unknown@xxx.net</email>
+		<name>Melixgaro</name>
+	</maintainer>
+	<longdescription lang="en">Download videos from various website. First devoted to french TV. Command-line version. Continuation of Dpluzz-cli</longdescription>
+	<longdescription lang="fr">Télécharge des vidéos depuis différents sites de rattrapage. Principalement dédié à la télévision française. Version en ligne de commande (seule disponible pour le moment). Suite du projet Dpluzz-cli.</longdescription>
+</pkgmetadata>
