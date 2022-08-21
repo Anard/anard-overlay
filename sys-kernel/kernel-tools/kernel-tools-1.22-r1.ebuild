@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 DESCRIPTION="Easily build and update kernel in Gentoo"
 HOMEPAGE="https://github.com/Anard/${PN}.git"
 
@@ -9,7 +9,7 @@ SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.t
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="+color +grub genkernel dracut +menuconfig gconfig xconfig nconfig"
 REQUIRED_USE="dracut? ( !genkernel ) ^^ ( menuconfig gconfig xconfig nconfig )"
 
