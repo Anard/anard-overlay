@@ -3,7 +3,7 @@
 
 EAPI=8
 DESCRIPTION="Easily build and update kernel in Gentoo"
-HOMEPAGE="https://github.com/Anard/${PN}.git"
+HOMEPAGE="https://github.com/Anard/kernel-tools.git"
 
 SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 

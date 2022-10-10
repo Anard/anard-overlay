@@ -7,8 +7,8 @@ inherit desktop
 inherit xdg-utils
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
-HOMEPAGE="https://github.com/Anard/${PN}.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PVR}.zip -> ${PF}.zip"
+HOMEPAGE="https://github.com/Anard/upgrade-portage.git"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${PF}.tar.gz"
 S="${WORKDIR}/${PF}"
 
 LICENSE="GPL-3"

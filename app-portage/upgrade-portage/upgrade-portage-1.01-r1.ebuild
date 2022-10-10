@@ -3,7 +3,7 @@
 
 EAPI=7
 DESCRIPTION="Simple way to upgrade Gentoo system"
-HOMEPAGE="https://github.com/Anard/${PN}.git"
+HOMEPAGE="https://github.com/Anard/upgrade-portage.git"
 SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"

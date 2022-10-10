@@ -8,7 +8,7 @@ inherit git-r3
 # Short one-line description of this package.
 DESCRIPTION="Easily build and update kernel in Gentoo"
 
-HOMEPAGE="https://github.com/Anard/${PN}.git"
+HOMEPAGE="https://github.com/Anard/kernel-tools.git"
 EGIT_REPO_URI="${HOMEPAGE}"
 EGIT_BRANCH="master"
 
