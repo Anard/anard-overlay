@@ -16,7 +16,7 @@ ESVN_REPO_URI="https://svn.code.sf.net/p/${PN}/code/stk-assets"
 LICENSE="GPL-2 GPL-3 CC-BY-SA-3.0 CC-BY-SA-4.0 CC0-1.0 public-domain ZLIB"
 SLOT="0"
 KEYWORDS=""
-IUSE="debug nettle recorder sqlite wiimote"
+IUSE="debug nettle recorder sqlite vulkan wiimote"
 
 # don't unbundle irrlicht and bullet
 # both are modified and system versions will break the game
@@ -46,6 +46,7 @@ RDEPEND="
 		>=dev-libs/openssl-1.0.1d:0=
 	)
 	recorder? ( media-libs/libopenglrecorder )
+	vulkan? ( media-libs/shaderc )
 	wiimote? ( net-wireless/bluez )"
 DEPEND="${RDEPEND}"
 BDEPEND="
@@ -78,6 +79,7 @@ src_configure() {
 		-DOpenGL_GL_PREFERENCE=GLVND
 		-DUSE_CRYPTO_OPENSSL=$(usex nettle no yes)
 		-DBUILD_RECORDER=$(usex recorder)
+		-DNO_SHADERC=$(usex vulkan off on)
 		-DUSE_WIIUSE=$(usex wiimote)
 		-DSTK_INSTALL_BINARY_DIR=bin
 		-DSTK_INSTALL_DATA_DIR=share/${PN}
