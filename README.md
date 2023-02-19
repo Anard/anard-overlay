@@ -92,7 +92,6 @@ Also add a desktop file which uses zenity to interactively manage upgrade
 Easily build a new kernel from known or working configuration.
 ```
 # emerge -a kernel-tools
-# eselect-kernel set X
 $ build-kernel --help
 ```
 Also add a shortcut to `grub-mkconfig -o /boot/grub/grub.cfg` as `update-grub` for Grub users (with grub USE flag) ;
