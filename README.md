@@ -3,7 +3,9 @@ Gentoo repository to port various additionnal packages
 - [**dpluzz-cli**](README.md#dpluzz) :
     downloads videos from various websites
 - [**trobairitz**](README.md#trobairitz) :
-    downloads videos from various websites, replaces older dpluzz-cli 
+    downloads videos from various websites, replaces older dpluzz-cli
+- [**leocad**](README.md#leocad) :
+    virtual LEGO® CAD software
 - [**disklav**](README.md#disklav) :
     manages files from specfic Yamaha Disklavier's disk images
 - **shell-text** :
@@ -67,6 +69,18 @@ Trobairitz replace dpluzz-cli for videos from Arte.tv and will shortly replace i
 
 ### Thanks
 [Melixgaro](https://launchpad.net/~melixgaro)
+
+## leocad
+### Instructions
+To install LeoCAD, simply use :
+```
+# emerge -a leocad
+```
+
+LeoCAD is a CAD software to design virtual models you can build with LEGO® bricks.
+
+### Thanks
+[Leonardo Zide](https://github.com/leozide)
 
 ## disklav
 ### Instructions
