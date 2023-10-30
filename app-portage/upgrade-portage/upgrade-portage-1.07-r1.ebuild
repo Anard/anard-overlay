@@ -8,8 +8,8 @@ inherit xdg-utils
 
 DESCRIPTION="Simple way to upgrade Gentoo system"
 HOMEPAGE="https://github.com/Anard/upgrade-portage.git"
-SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${PF}.tar.gz"
-S="${WORKDIR}/${PF}"
+SRC_URI="https://github.com/Anard/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${P}"
 
 LICENSE="GPL-3"
 SLOT="0"
