@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -18,7 +18,7 @@ if [[ ${PV} == *9999* ]];then
 	S="${WORKDIR}/${PN}-continuous"
 else
 	SRC_URI="${BASE_URI}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~x86 ~amd64 ~arm"
+	KEYWORDS="~amd64 ~arm ~x86"
 fi
 SRC_URI="
 	${SRC_URI}
@@ -27,7 +27,6 @@ SRC_URI="
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE=""
 
 DEPEND="
 	dev-qt/qtcore:5

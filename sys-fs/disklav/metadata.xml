@@ -5,4 +5,7 @@
 		<email>unknown@xxx.net</email>
 		<name>Tom Nardi</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">MS3FGX/disklav</remote-id>
+	</upstream>
 </pkgmetadata>

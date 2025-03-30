@@ -11,5 +11,8 @@
   </longdescription>
   <use>
     <flag name="color">Colorize texts for command line</flag>
-</use>
+  </use>
+  <upstream>
+    <remote-id type="github">Anard/upgrade-portage</remote-id>
+  </upstream>
 </pkgmetadata>

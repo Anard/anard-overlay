@@ -5,4 +5,8 @@
     <email>talentos.gcom@g.globo</email>
     <name>Globo.com</name>
   </maintainer>
+  <upstream>
+    <remote-id type="github">globocom/m3u8</remote-id>
+    <remote-id type="pypi">m3u8</remote-id>
+  </upstream>
 </pkgmetadata>

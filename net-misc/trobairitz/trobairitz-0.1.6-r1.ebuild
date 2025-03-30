@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,8 +9,7 @@ S="${WORKDIR}/v${PV}"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
-PYTHON_COMPAT=( python3_{6..11} )
+PYTHON_COMPAT=( python3_{6..13} )
 RDEPEND="media-video/ffmpeg dev-python/requests dev-python/beautifulsoup4 dev-python/m3u8"
 #BDEPEND=">=dev-util/debhelper-12"
 DEPEND="${RDEPEND}"

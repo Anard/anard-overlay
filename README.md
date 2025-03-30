@@ -35,24 +35,6 @@ And sync with overlay :
 ```
 # emerge --sync anard
 ```
-
-## dPluzz
-### Instructions
-To install dpluzz-cli, simply use :
-```
-# emerge -a dpluzz-cli
-```
-
-For help, type :
-```
-$ dpluzz-cli --help
-```
-
-You'll have to use dpluzz-cli with -f option to work (use ffmpeg in place of avconv).
-
-### Thanks
-[Melixgaro](https://launchpad.net/~melixgaro)
-
 ## trobairitz
 ### Instructions
 To install trobairitz, simply use :

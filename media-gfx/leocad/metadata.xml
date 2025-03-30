@@ -5,4 +5,7 @@
 		<email>anard@free.fr</email>
 		<name>Anard</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">leozide/leocad</remote-id>
+	</upstream>
 </pkgmetadata>

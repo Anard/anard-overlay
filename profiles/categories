@@ -1,6 +1,7 @@
 app-portage
-dev-libs
+dev-python
 games-action
+media-gfx
 net-misc
 scripts
 sys-fs

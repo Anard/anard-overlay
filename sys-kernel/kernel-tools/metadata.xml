@@ -17,5 +17,8 @@
     <flag name="gconfig">Use gconfig to edit configuration file</flag>
     <flag name="xconfig">Use xconfig to edit configuration file</flag>
     <flag name="nconfig">Use nconfig to edit configuration file</flag>
-</use>
+  </use>
+  <upstream>
+    <remote-id type="github">Anard/kernel-tools</remote-id>
+  </upstream>
 </pkgmetadata>
