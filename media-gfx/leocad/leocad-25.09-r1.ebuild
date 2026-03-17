@@ -29,9 +29,9 @@ LICENSE="GPL-2"
 SLOT="0"
 
 DEPEND="
-	dev-qt/qtcore:6
-	dev-qt/qtopengl:6
-	dev-qt/qtconcurrent:6
+	dev-qt/qtcore:5
+	dev-qt/qtopengl:5
+	dev-qt/qtconcurrent:5
 "
 RDEPEND="${DEPEND}
 	x11-themes/hicolor-icon-theme"
