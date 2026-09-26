@@ -29,9 +29,10 @@ LICENSE="GPL-2"
 SLOT="0"
 
 DEPEND="
-	dev-qt/qtcore
-	dev-qt/qtopengl
-	dev-qt/qtconcurrent
+        dev-qt/qtbase
+        dev-qt/qttools
+        media-libs/libpng
+        media-libs/libjpeg-turbo
 "
 RDEPEND="${DEPEND}
 	x11-themes/hicolor-icon-theme"
